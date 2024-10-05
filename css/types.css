@@ -1,0 +1,197 @@
+@keyframes planetHoverScale
+{
+    0% { scale: 1; }
+    100% { scale: 1.2; }
+}
+
+img{ width: 100%; }
+b{font-weight: bold;}
+.selection
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 1%;
+    position: fixed;
+    top: 2%;
+    left: 25%;
+    z-index: 10;
+}
+.selection button
+{
+    padding: 7px 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.selection button:hover{ background-color: #ffb703; }
+
+.leftArrowDefault
+{
+    width: 90px;
+    position: fixed;
+    top: 40%;
+    left: 1%;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.rightArrowDefault
+{
+    width: 90px;
+    position: fixed;
+    top: 40%;
+    right: 2%;
+    cursor: pointer;
+    transform: rotateY(180deg);
+    z-index: 20;
+}
+
+.leftArrowHover
+{
+    display: none;
+    width: 90px;
+    position: fixed;
+    top: 40%;
+    left: 1%;
+    cursor: pointer;
+    z-index: 20;
+}
+.rightArrowHover
+{
+    display: none;
+    width: 90px;
+    position: fixed;
+    top: 40%;
+    right: 2%;
+    cursor: pointer;
+    transform: rotateY(180deg);
+    z-index: 20;
+}
+
+.info
+{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(12%);
+    border: solid;
+}
+
+.categoryImg { width: 35%; }
+
+.categoryInfo
+{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.categoryInfo h1
+{
+    font-size: 50px;
+    padding: 7% 0% 7% 0%;
+}
+.categoryInfo p
+{
+    width: 90%;
+    font-size: 25px;
+}
+
+.categoryInfo p a
+{
+    color: inherit;
+    font-weight: bold;
+}
+
+.exoplanets
+{
+    padding-top: 7%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    transform: translateX(10%);
+}
+
+.exoplanets .planet
+{
+    width: 30%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.exoplanets .planetImg:hover
+{
+    animation: planetHoverScale 0.8s;
+    scale: 1.2;
+}
+
+.exoplanets .planet h1 { padding-top: 10%; }
+
+.exoplanetsInfo
+{
+    width: 82%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50.3%) translateY(-50%);
+    z-index: 5;
+}
+
+.exoplanetsInfo .planet
+{
+    display: none;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+    border: solid;
+    border-radius: 25px;
+    background-color: #BD93F9;
+    color: #1A1A2E;
+}
+
+.exoplanetsInfo .planet .planetImg
+{
+    width: 35%;
+    padding: 1%;
+}
+
+.planetInfo
+{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 5;
+}
+
+.planetInfo h1
+{
+    font-size: 50px;
+    padding: 7% 0%;
+}
+
+.planetInfo p
+{
+    font-size: 20px;
+    padding: 2% 0%;
+}
+
+.close
+{
+    width: 60px;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    cursor: pointer;
+    z-index: 15;
+}

@@ -1,0 +1,72 @@
+.about-section {
+    display: grid;
+    grid-template-columns: 50% 45%;
+    grid-template-areas: 
+    "cats about"
+    "link nasa";
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px; 
+    padding: 20px;
+}
+
+.about-section img:not(.img-nasa img)
+{
+    border-radius: 100%;
+    box-shadow: 0 5px 10px 6px #DFC597;
+    grid-area: cats;
+}
+
+.about-image {
+    width: 80%;
+    margin-right: 20px; 
+}
+
+.about-content {
+    width: 90%;
+    text-align: center;
+    grid-area: about;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    line-height: 1.6;
+    font-size: large;
+    margin-bottom: 1%;
+}
+
+.links-interest
+{
+    grid-area: link;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    position: relative;
+    top: 15px;
+    right: 50px;
+}
+
+.links-interest a {padding-top: 1%;}
+
+.img-nasa
+{
+    grid-area: nasa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-nasa img
+{
+    width: 60%;
+    border-radius: 10px;
+    position: relative;
+    bottom: 10px;
+}

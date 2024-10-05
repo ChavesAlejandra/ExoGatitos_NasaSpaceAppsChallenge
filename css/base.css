@@ -1,0 +1,89 @@
+a
+{  
+  text-decoration: none;
+  color: #E7E7E7;
+}
+
+body 
+{   
+  background: #1a1a2e; 
+  color: #E7E7E7;
+}
+
+h1{font-size: 40px;}
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.logo-img { width: 20%; }
+
+.logo-img img{width: 100%;}
+
+.about-us
+{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-history
+{
+    width: 20% ;
+    display: flex;
+    justify-content: center;
+}
+
+.footer
+{
+  height: 200px;
+  padding-top: 2%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2% 20% 55% 20% 2%;
+  grid-template-areas: ". gatitos center nasa .";
+}
+
+.logo-img-footer
+{
+  width: 100%;
+  grid-area: gatitos;
+}
+
+.center-footer{
+  grid-area: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  font-family: Lora, serif;
+  text-decoration: none;
+}
+
+.about-us-footer
+{
+  padding: 2%;
+  cursor: pointer;
+}
+
+.nasa-web
+{
+  padding: 2%;
+  cursor: pointer;
+}
+
+.logo-nasa-img-footer
+{
+  width: 100%;
+  grid-area: nasa;
+}
+
+.footer img{width: 100%;}
+
+.about-us a:hover, .header-history a:hover, .about-us-footer a:hover, .nasa-web a:hover{ color: #ffb703; }
+
